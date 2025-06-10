@@ -27,7 +27,12 @@ export const TaskItem = ({ task, onToggle, onEdit, onDelete }: Props) => (
     >
       <PencilIcon className="size-4" />
     </Button>
-    <Button variant="destructive" size="icon" onClick={() => onDelete(task.id)}>
+    <Button
+      variant="destructive"
+      size="icon"
+      onClick={() => onDelete(task.id)}
+      aria-label="Delete task"
+    >
       <TrashIcon className="size-4" />
     </Button>
   </div>
